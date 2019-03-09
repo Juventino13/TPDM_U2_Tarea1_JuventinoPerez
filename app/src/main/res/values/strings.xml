@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TPDM_U2_Tarea1_JuventinoPerez</string>
+    <string name="listaview">
+            <item>Dinamico</item>
+            <item>Condiciones</item>
+            <item>Ciclos</item>
+            <item>Acerca de...</item>
+            <item>Exit</item>
+    </string>
 </resources>

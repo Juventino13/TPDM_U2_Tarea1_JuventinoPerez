@@ -14,7 +14,10 @@ public BaseProyecto(Context context, String name,
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE PROYECTOS(IDPROYECTO INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, DESCRIPCION VARCHAR(200) NOT NULL,UBICACION VARCHAR (200), FECHA DATE, PRESUPUESTO FLOAT)");
+        db.execSQL("CREATE TABLE PROYECTOS(IDPROYECTO INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
+                " DESCRIPCION VARCHAR(200) NOT NULL," +
+                "UBICACION VARCHAR (200), " +
+                "FECHA DATE, PRESUPUESTO FLOAT)");
     }
 
     @Override

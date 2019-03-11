@@ -20,9 +20,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     BaseProyectoCivil db;
+
 ArrayList<String> listItem;
+
 ArrayAdapter adapter;
+
 ListView userList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +52,10 @@ viewData();
     });
 
 
+
+
+
+
     }
 
 
@@ -63,8 +71,12 @@ viewData();
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.agregar:
-                Intent i = new Intent(MainActivity.this, Main2Activity.class);
-                startActivity(i);
+                Intent agregar = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(agregar);
+                return true;
+            case R.id.eliminar:
+                Intent eli = new Intent(MainActivity.this, Main3Activity.class);
+                startActivity(eli);
                 return true;
             case R.id.regresar:
                 finish();
@@ -73,6 +85,8 @@ viewData();
         }
         return true;
     }
+
+
 
     private void viewData() {
         Cursor cursor = db.viewData();

@@ -7,33 +7,54 @@
 
     android:orientation="vertical"
     tools:context=".Main2Activity">
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Descripcion: "/>
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="nombre" />
-
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubicacion: "/>
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/ubicacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="telefono" />
-
+        android:hint="" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha: "/>
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/fecha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="sueldo"
+        android:hint="dd-mm-yyyy"
+        android:inputType="date" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Presupuesto: "/>
+    <EditText
+        android:id="@+id/presupuesto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="$"
         android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/guardarabogado"
+        android:id="@+id/guardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="guardar" />

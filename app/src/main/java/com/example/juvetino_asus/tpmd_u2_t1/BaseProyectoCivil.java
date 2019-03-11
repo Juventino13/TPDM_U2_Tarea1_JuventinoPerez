@@ -12,10 +12,11 @@ public class BaseProyectoCivil extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE PROYECTOS(IDPROYECTO INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
+        db.execSQL("CREATE TABLE PROYECTOS(IDPROYECTO INTEGER PRIMARY KEY AUTOINCREMENT ," +
                 " DESCRIPCION VARCHAR(200) NOT NULL," +
                 "UBICACION VARCHAR (200), " +
-                "FECHA DATE, PRESUPUESTO FLOAT)");
+                "FECHA DATE," +
+                " PRESUPUESTO FLOAT)");
     }
 
     @Override

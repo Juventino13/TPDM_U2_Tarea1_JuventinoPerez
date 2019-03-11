@@ -1,208 +1,170 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-    <component name="AndroidLayouts">
-        <shared>
-            <config />
-        </shared>
-    </component>
-    <component name="ChangeListManager">
-        <list
-            name="Default Changelist"
-            comment=""
-            default="true"
-            id="9c2bcfff-c4f7-441a-b7ae-ed46bda6267c" />
-        <option
-            name="EXCLUDED_CONVERTED_TO_IGNORED"
-            value="true" />
-        <option
-            name="SHOW_DIALOG"
-            value="false" />
-        <option
-            name="HIGHLIGHT_CONFLICTS"
-            value="true" />
-        <option
-            name="HIGHLIGHT_NON_ACTIVE_CHANGELIST"
-            value="false" />
-        <option
-            name="LAST_RESOLUTION"
-            value="IGNORE" />
-    </component>
-    <component name="ExternalProjectsManager">
-        <system id="GRADLE">
-            <state>
-                <projects_view />
-            </state>
-        </system>
-    </component>
-    <component name="FUSProjectUsageTrigger">
-        <session id="1417780044">
-            <usages-collector id="statistics.lifecycle.project">
-                <counts>
-                    <entry
-                        key="project.closed"
-                        value="1" />
-                    <entry
-                        key="project.open.time.10"
-                        value="1" />
-                    <entry
-                        key="project.open.time.3"
-                        value="1" />
-                    <entry
-                        key="project.open.time.5"
-                        value="2" />
-                    <entry
-                        key="project.opened"
-                        value="4" />
-                </counts>
-            </usages-collector>
-            <usages-collector id="statistics.file.extensions.open">
-                <counts>
-                    <entry
-                        key="java"
-                        value="2" />
-                    <entry
-                        key="xml"
-                        value="4" />
-                </counts>
-            </usages-collector>
-            <usages-collector id="statistics.file.types.open">
-                <counts>
-                    <entry
-                        key="JAVA"
-                        value="2" />
-                    <entry
-                        key="XML"
-                        value="4" />
-                </counts>
-            </usages-collector>
-            <usages-collector id="statistics.file.extensions.edit">
-                <counts>
-                    <entry
-                        key="java"
-                        value="1445" />
-                    <entry
-                        key="xml"
-                        value="286" />
-                </counts>
-            </usages-collector>
-            <usages-collector id="statistics.file.types.edit">
-                <counts>
-                    <entry
-                        key="JAVA"
-                        value="1445" />
-                    <entry
-                        key="XML"
-                        value="286" />
-                </counts>
-            </usages-collector>
-        </session>
-    </component>
-    <component name="FileEditorManager">
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file
-                current-in-tab="false"
-                pinned="false">
-                <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-                    <provider editor-type-id="android-designer2" />
-                    <provider
-                        editor-type-id="text-editor"
-                        selected="true">
-                        <state relative-caret-position="102">
-                            <caret
-                                column="33"
-                                line="6"
-                                selection-end-column="33"
-                                selection-end-line="6"
-                                selection-start-column="33"
-                                selection-start-line="6" />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file
-                current-in-tab="true"
-                pinned="false">
-                <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/tpdm_u1_ejercicio3/MainActivity.java">
-                    <provider
-                        editor-type-id="text-editor"
-                        selected="true">
-                        <state relative-caret-position="119">
-                            <caret
-                                column="41"
-                                lean-forward="true"
-                                line="26"
-                                selection-end-column="41"
-                                selection-end-line="26"
-                                selection-start-column="41"
-                                selection-start-line="26" />
-                            <folding>
-                                <element
-                                    expanded="true"
-                                    signature="e#782#1721#0" />
-                                <element
-                                    expanded="true"
-                                    signature="e#1720#1721#0" />
-                            </folding>
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file
-                current-in-tab="false"
-                pinned="false">
-                <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/varios_objetos.xml">
-                    <provider editor-type-id="android-designer2" />
-                    <provider
-                        editor-type-id="text-editor"
-                        selected="true">
-                        <state relative-caret-position="170">
-                            <caret
-                                column="34"
-                                line="10"
-                                selection-end-column="34"
-                                selection-end-line="10"
-                                selection-start-column="34"
-                                selection-start-line="10" />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-        </leaf>
-    </component>
-    <component name="FileTemplateManagerImpl">
-        <option name="RECENT_TEMPLATES">
-            <list>
-                <option value="layoutResourceFile" />
-            </list>
-        </option>
-    </component>
-    <component name="Git.Settings">
-        <option
-            name="RECENT_GIT_ROOT_PATH"
-            value="$PROJECT_DIR$" />
-    </component>
-    <component name="IdeDocumentHistory">
-        <option name="CHANGED_PATHS">
-            <list>
-                <option value="$PROJECT_DIR$/app/src/main/res/layout/varios_objetos.xml" />
-                <option value="$PROJECT_DIR$/app/src/main/java/com/example/tpdm_u1_ejercicio3/MainActivity.java" />
-                <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-            </list>
-        </option>
-    </component>
-    <component
-        name="ProjectFrameBounds"
-        extendedState="6">
-        <option
-            name="x"
-            value="666" />
-        <option
-            name="y"
-            value="64" />
-        <option
-            name="width"
-            value="697" />
-        <option
-            name="height"
-            value="735"
-        /
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#008577"
+        android:pathData="M0,0h108v108h-108z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M9,0L9,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,0L19,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M29,0L29,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M39,0L39,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M49,0L49,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M59,0L59,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M69,0L69,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M79,0L79,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M89,0L89,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M99,0L99,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,9L108,9"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,19L108,19"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,29L108,29"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,39L108,39"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,49L108,49"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,59L108,59"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,69L108,69"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,79L108,79"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,89L108,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,99L108,99"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,29L89,29"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,39L89,39"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,49L89,49"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,59L89,59"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,69L89,69"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,79L89,79"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M29,19L29,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M39,19L39,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M49,19L49,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M59,19L59,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M69,19L69,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M79,19L79,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+</vector>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/insertar"  android:title="Insertar"/>
-    <item android:id="@+id/consultar" android:title="Consultar"/>
-    <item android:id="@+id/eliminar" android:title="Eliminar"/>
-    <item android:id="@+id/modificar" android:title="Modificar"/>
-
+    <item android:id="@+id/agregaboton"  android:title="Agregar Proyecto"/>
+    <item android:id="@+id/agregarcampo" android:title="Actualizar Proyecto"/>
+    <item android:id="@+id/agregaretiqueta" android:title="Eliminar proyecto"/>
+    <item android:id="@+id/quitar" android:title="Quitar todos"/>
+    <item android:id="@+id/regresar" android:title="Regresar"/>
 
 
 </menu>

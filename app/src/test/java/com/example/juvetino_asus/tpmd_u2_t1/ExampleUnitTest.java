@@ -1,4 +1,4 @@
-package com.example.tpdm_u2_tarea1_juventinoperez;
+package com.example.juvetino_asus.tpmd_u2_t1;
 
 import org.junit.Test;
 

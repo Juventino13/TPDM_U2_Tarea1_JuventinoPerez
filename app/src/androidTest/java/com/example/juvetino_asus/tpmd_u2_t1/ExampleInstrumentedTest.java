@@ -1,4 +1,4 @@
-package com.example.tpdm_u2_tarea1_juventinoperez;
+package com.example.juvetino_asus.tpmd_u2_t1;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.tpdm_u2_tarea1_juventinoperez", appContext.getPackageName());
+        assertEquals("com.example.juvetino_asus.tpmd_u2_t1", appContext.getPackageName());
     }
 }

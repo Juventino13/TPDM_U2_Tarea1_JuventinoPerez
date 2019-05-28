@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="15dp"
-
+android:layout_margin="20dp"
+    android:background="#FFFDE7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     android:orientation="vertical"
     tools:context=".Main2Activity">
+
+
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -57,6 +59,8 @@
 
     <Button
         android:id="@+id/guardar"
+        android:paddingHorizontal="30dp"
+                android:background="#03A9F4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="guardar" />

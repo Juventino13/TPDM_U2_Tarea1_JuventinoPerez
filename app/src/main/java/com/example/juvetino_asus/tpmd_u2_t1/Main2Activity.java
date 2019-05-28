@@ -1,5 +1,6 @@
 package com.example.juvetino_asus.tpmd_u2_t1;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
@@ -10,12 +11,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
-    BaseProyectoCivil base;
-    Button  insertar;
+
+
+
     EditText descripcion, ubicacion,fecha, presupuesto;
-    TextView resultado;
+    Button  btninsertar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,27 +27,33 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        base = new BaseProyectoCivil(this, "basesota",null,1);
 
-        insertar = findViewById(R.id.guardar);
+        btninsertar = findViewById(R.id.guardar);
         descripcion = findViewById(R.id.descripcion);
         ubicacion= findViewById(R.id.ubicacion);
         fecha = findViewById(R.id.fecha);
         presupuesto = findViewById(R.id.presupuesto);
-        insertar = findViewById(R.id.guardar);
 
-        insertar.setOnClickListener(new View.OnClickListener() {
+
+        btninsertar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                insercion();
-
+                Proyecto proyecto=new Proyecto(Main2Activity.this);
+                if (proyecto.insertar(new Proyecto(1,descripcion.getText().toString(),ubicacion.getText().toString(),fecha.getText().toString(),Float.parseFloat(presupuesto.getText().toString())))){
+                    Toast.makeText(Main2Activity.this,"GUARDADO",Toast.LENGTH_LONG).show();
+                    Intent i=new Intent(Main2Activity.this,MainActivity.class);
+                    startActivity(i);
+                    finish();
+                }
+                else{
+                          Toast.makeText(Main2Activity.this, "ERROR", Toast.LENGTH_LONG).show();
+                }
             }
         });
-
     }
 
-
-    private void insercion() {
+//FORMA DE SUSTITUIR
+    /* private void insercion() {
         try{
             SQLiteDatabase inser = base.getWritableDatabase();
             String SQL = "INSERT INTO PROYECTOS VALUES(NULL,'%1','%2','%3','%4')";
@@ -64,8 +74,10 @@ public class Main2Activity extends AppCompatActivity {
         }catch (SQLiteException e){
             mensaje("Error de insercion",e.getMessage());
         }
-    }
+    }*/
 
+
+/*
     private void mensaje(String titulo, String Mensaje) {
         AlertDialog.Builder a = new AlertDialog.Builder(this);
 
@@ -75,4 +87,6 @@ public class Main2Activity extends AppCompatActivity {
                 .show();
     }
 
+    MENSAJE
+*/
 }

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/agregar"  android:title="Agregar Proyecto"/>
-    <item android:id="@+id/eliminar" android:title="Eliminar Proyecto"/>
-    <item android:id="@+id/Actualizar" android:title="Actializar proyecto"/>
-    <item android:id="@+id/quitar" android:title="Quitar todos"/>
-    <item android:id="@+id/regresar" android:title="Regresar"/>
+    <item android:id="@+id/consultar" android:title="Consultar"></item>
+    <item android:id="@+id/consultar" android:title="#NoMeRepruebesBenigno"></item>
+
 
 
 </menu>

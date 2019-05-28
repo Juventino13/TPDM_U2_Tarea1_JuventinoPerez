@@ -1,35 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="19dp"
+    android:padding="10dp"
+    android:layout_margin="10dp"
     tools:context=".Main3Activity">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BUSCAR"
-        android:layout_gravity="center"/>
-
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buscar"
-        />
+        android:background="#FFFDE7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar proyecto"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20dp" />
 
 
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editID"
+            android:hint=" Descripción o ID"
+            />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/eliminar"
-        android:text="Eliminar"
-        />
+        <Button
+            android:text="Buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBuscar"
+            android:background="#03A9F4"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Informacion"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDescripcion"
+            android:text="Descripción: "
+            android:layout_marginTop="10dp"
+            />
 
-</LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editDescripcion"
+            android:hint="Descripción"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicacion: "
+            android:layout_marginTop="10dp"
+            android:id="@+id/textUbicacion"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editUbicacion"
+            android:hint="Ubicación del inmueble"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha: "
+            android:layout_marginTop="10dp"
+            android:id="@+id/textFecha"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="aaaa/mm/dd"
+            android:id="@+id/editFecha"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Presupuesto: "
+            android:layout_marginTop="10dp"
+            android:id="@+id/textPresupuesto"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="$ 0"
+            android:id="@+id/editPresupuesto"
+            android:inputType="numberDecimal"
+            />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#03A9F4"
+             android:layout_marginTop="10dp"
+            android:text="Back" />
+    </LinearLayout>
+</ScrollView>

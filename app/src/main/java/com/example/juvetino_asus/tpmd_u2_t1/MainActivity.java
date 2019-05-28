@@ -1,7 +1,9 @@
 package com.example.juvetino_asus.tpmd_u2_t1;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,93 +18,92 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
-    BaseProyectoCivil db;
-
-ArrayList<String> listItem;
-
-ArrayAdapter adapter;
-
-ListView userList;
+    ListView lista;
+    Proyecto[] listaProyectoCivil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        db = new BaseProyectoCivil(this,"basesota",null,1);
+        lista=findViewById(R.id.listaDesplegable);
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
+                AlertDialog.Builder alerta=new AlertDialog.Builder(MainActivity.this);
+                alerta.setTitle("Alert")
+                        .setMessage("Editar Proyecto")
 
-        listItem = new ArrayList<>();
-        userList = findViewById(R.id.lista);
+                        .setPositiveButton("Si",new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent datos=new Intent(MainActivity.this,Main4Activity.class);
+                                datos.putExtra("ID",listaProyectoCivil[position].getId());
+                                datos.putExtra("DESCRIPCION",listaProyectoCivil[position].getDescripcion());
+                                datos.putExtra("FECHA",listaProyectoCivil[position].getFecha());
+                                datos.putExtra("UBICACION",listaProyectoCivil[position].getUbicacion());
+                                datos.putExtra("PRESUPUESTO",listaProyectoCivil[position].getPresupuesto());
 
+                                startActivity(datos);
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
+            }
+        });
+    }
 
-viewData();
+    @Override
+    protected void onStart(){
+        super.onStart();
+        Proyecto proyecto=new Proyecto(this);
+        Proyecto vec[]=proyecto.consultar();
+        listaProyectoCivil=vec;
+        String[] descripcion=null;
 
-
-    userList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            String text = userList.getItemAtPosition(position).toString();
-            Toast.makeText(MainActivity.this,""+text, Toast.LENGTH_SHORT).show();
-
+        if (vec==null){
+            descripcion=new String[1];
+            descripcion[0]="No hay proyectos registrados";
+            lista.setEnabled(false);
         }
-    });
+        else{
+            descripcion=new String[vec.length];
+            for (int i=0; i<vec.length; i++){
+                Proyecto temperal=vec[i];
+                descripcion[i]=temperal.getDescripcion();
+            }
 
 
-
-
-
-
+            lista.setEnabled(true);
+        }
+        ArrayAdapter<String> adapt=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,descripcion);
+        lista.setAdapter(adapt);
     }
 
-
-
-
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menudinamico,menu);
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.agregar:
-                Intent agregar = new Intent(MainActivity.this, Main2Activity.class);
-                startActivity(agregar);
-                return true;
-            case R.id.eliminar:
-                Intent eli = new Intent(MainActivity.this, Main3Activity.class);
-                startActivity(eli);
-                return true;
-            case R.id.regresar:
+                Intent insertar =new Intent(this,Main2Activity.class);
+                startActivity(insertar);
+                finish();
+                break;
+            case R.id.consultar:
+                Intent consultar=new Intent(this,Main3Activity.class);
+                startActivity(consultar);
                 finish();
                 break;
 
         }
-        return true;
+        return super.onOptionsItemSelected(item);
     }
-
-
-
-    private void viewData() {
-        Cursor cursor = db.viewData();
-
-        if (cursor.getCount()==0) {
-            Toast.makeText(this, "No hay datos ", Toast.LENGTH_LONG).show();
-        }else{
-            while (cursor.moveToNext()){
-                listItem.add(cursor.getString(1));
-
-            }
-            adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,listItem);
-            userList.setAdapter(adapter);
-        }
-    }
-
-
-
 }
+

@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#FFFDE7"
     android:layout_height="match_parent"
-    android:id="@+id/layoutdinamico"
-    tools:context=".MainActivity">
+        tools:context=".MainActivity">
 
 
     <ListView
-        android:id="@+id/lista"
+        android:id="@+id/listaDesplegable"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:entries="@string/listaview" />
-
+        android:textAlignment="center"
+      />
 
 
 </LinearLayout>

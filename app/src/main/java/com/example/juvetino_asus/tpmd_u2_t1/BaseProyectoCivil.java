@@ -28,12 +28,6 @@ public class BaseProyectoCivil extends SQLiteOpenHelper {
 
     }
 
-public Cursor viewData(){
-        SQLiteDatabase db = this.getReadableDatabase();
 
-        String query = "SELECT * FROM PROYECTOS";
-        Cursor cursor = db.rawQuery(query,null);
-return cursor;
-}
 
 }

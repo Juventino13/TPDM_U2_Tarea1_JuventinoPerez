@@ -16,13 +16,16 @@ public class Main2Activity extends AppCompatActivity {
     Button  insertar;
     EditText descripcion, ubicacion,fecha, presupuesto;
     TextView resultado;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
         base = new BaseProyectoCivil(this, "basesota",null,1);
-insertar = findViewById(R.id.guardar);
+
+        insertar = findViewById(R.id.guardar);
         descripcion = findViewById(R.id.descripcion);
         ubicacion= findViewById(R.id.ubicacion);
         fecha = findViewById(R.id.fecha);
@@ -36,8 +39,6 @@ insertar = findViewById(R.id.guardar);
 
             }
         });
-
-
 
     }
 

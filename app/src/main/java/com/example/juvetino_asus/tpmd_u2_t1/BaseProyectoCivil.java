@@ -20,6 +20,7 @@ public class BaseProyectoCivil extends SQLiteOpenHelper {
                 "UBICACION VARCHAR (200), " +
                 "FECHA DATE," +
                 " PRESUPUESTO FLOAT)");
+
     }
 
     @Override
